@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    build: .
+    ports:
+      - 9000:8080
+    volumes:
+      - ./app.py:/var/task/app.py
